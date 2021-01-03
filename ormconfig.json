@@ -1,0 +1,18 @@
+{
+  "type": "mysql",
+  "host": "db-tilda-contents.ccazfeugjnmb.ap-northeast-2.rds.amazonaws.com",
+  "port": 3306,
+  "username": "admin",
+  "password": "admin1234!",
+  "database": "test_db",
+  "synchronize": true,
+  "logging": true,
+  "entities": ["src/entity/**/*.ts"],
+  "migrations": ["src/migration/**/*.ts"],
+  "subscribers": ["src/subscriber/**/*.ts"],
+  "cli": {
+    "entitiesDir": "src/entity",
+    "migrationsDir": "src/migration",
+    "subscribersDir": "src/subscriber"
+  }
+}
